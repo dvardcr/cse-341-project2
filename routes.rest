@@ -1,4 +1,7 @@
+//************//
 //Testing USERS
+//************//
+
 ### Get All users
 GET http://localhost:3000/users
 
@@ -71,3 +74,81 @@ content-type: application/json
 
 ### Delete user
 DELETE https://cse-341-project2-29fu.onrender.com/users/4
+
+
+//************//
+//Testing PETS//
+//************//
+
+### Get All pets
+GET http://localhost:3000/pets
+
+### Get pets by id
+GET http://localhost:3000/pets/1
+
+### Add new pet
+POST http://localhost:3000/pets HTTP/1.1
+content-type: application/json
+
+{
+"name": "Mikey",
+"species": "Turtle",
+"breed": "Box Turtle",
+"age": 15,
+"shelter_site": "Reptile Rescue",
+"description": "It prefers leisure to training martial arts. *wink* *wink*"
+}
+
+### Update user
+PUT http://localhost:3000/pets/9 HTTP/1.1
+content-type: application/json
+
+{
+"name": "Raph",
+"species": "Turtle",
+"breed": "Snapping Turtle",
+"age": 15,
+"shelter_site": "Reptile Rescue",
+"description": "Is short-tempered, aggressive, sullen, maddened, sarcastic, and rebellious."
+}
+
+### Delete user
+DELETE http://localhost:3000/pets/9
+
+
+
+//Production PETS
+### Get All pets
+GET https://cse-341-project2-29fu.onrender.com/pets
+
+### Get pets by id
+GET https://cse-341-project2-29fu.onrender.com/pets/3
+
+### Add new pet
+POST https://cse-341-project2-29fu.onrender.com/pets HTTP/1.1
+content-type: application/json
+
+{
+"name": "Mikey",
+"species": "Turtle",
+"breed": "Box Turtle",
+"age": 15,
+"shelter_site": "Reptile Rescue",
+"description": "It prefers leisure to training martial arts. *wink* *wink*"
+}
+
+### Update pet
+PUT https://cse-341-project2-29fu.onrender.com/pets/9 HTTP/1.1
+content-type: application/json
+
+{
+"name": "Raph",
+"species": "Turtle",
+"breed": "Snapping Turtle",
+"age": 15,
+"shelter_site": "Reptile Rescue",
+"description": "Is short-tempered, aggressive, sullen, maddened, sarcastic, and rebellious."
+}
+
+### Delete user
+DELETE https://cse-341-project2-29fu.onrender.com/pets/9
