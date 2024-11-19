@@ -1,0 +1,29 @@
+[
+    {
+    "user_id": 1,
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "johndoe@example.com",
+    "address": "123 Main St, Springfield, IL, 62701",
+    "phone": "+1 555-123-4567",
+    "pet_preference": "Dog"
+    },
+    {
+    "user_id": 2,
+    "firstname": "Jane",
+    "lastname": "Smith",
+    "email": "janesmith@example.com",
+    "address": "456 Oak St, Lincoln, NE, 68501",
+    "phone": "+1 555-987-6543",
+    "pet_preference": "Cat"
+    },
+    {
+    "user_id": 3,
+    "firstname": "Alice",
+    "lastname": "Green",
+    "email": "alicegreen@example.com",
+    "address": "789 Pine St, Omaha, NE, 68102",
+    "phone": "+1 555-321-8765",
+    "pet_preference": "Rabbit"
+    }
+]  
