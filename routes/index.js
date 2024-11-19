@@ -4,4 +4,6 @@ router.get('/', (req, res) => {res.send('Project 2')});
 
 router.use('/users', require('./users'));
 
+router.use('/pets', require('./pets'));
+
 module.exports = router;

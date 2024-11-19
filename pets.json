@@ -1,0 +1,74 @@
+[
+    {
+        "pet_id": 1,
+        "name": "Bella",
+        "species": "Dog",
+        "breed": "Golden Retriever",
+        "age": 3,
+        "shelter_site": "Happy Paws Shelter",
+        "description": "A friendly and playful golden retriever who loves to play fetch and cuddle."
+    },
+    {
+        "pet_id": 2,
+        "name": "Milo",
+        "species": "Cat",
+        "breed": "Tabby",
+        "age": 2,
+        "shelter_site": "Paws and Whiskers",
+        "description": "A curious tabby cat who enjoys exploring and lounging in the sun."
+    },
+    {
+        "pet_id": 3,
+        "name": "Buddy",
+        "species": "Dog",
+        "breed": "Labrador",
+        "age": 5,
+        "shelter_site": "Four Paws Rescue",
+        "description": "A loyal labrador who loves to run and play with other dogs. Great family pet."
+    },
+    {
+        "pet_id": 4,
+        "name": "Luna",
+        "species": "Cat",
+        "breed": "Siamese",
+        "age": 4,
+        "shelter_site": "Whisker Haven Shelter",
+        "description": "A sweet siamese cat with striking blue eyes. She enjoys being pampered and sitting in laps."
+    },
+    {
+        "pet_id": 5,
+        "name": "Charlie",
+        "species": "Dog",
+        "breed": "Beagle",
+        "age": 1,
+        "shelter_site": "Pawprint Shelter",
+        "description": "A playful and energetic beagle. Loves to explore and is good with kids."
+    },
+    {
+        "pet_id": 6,
+        "name": "Fluffy",
+        "species": "Rabbit",
+        "breed": "Himalayan",
+        "age": 2,
+        "shelter_site": "Bunny Haven",
+        "description": "A sweet and calm rabbit who enjoys snuggling and hopping around the yard."
+    },
+    {
+        "pet_id": 7,
+        "name": "Peanut",
+        "species": "Hamster",
+        "breed": "Syrian",
+        "age": 1,
+        "shelter_site": "Tiny Tails Shelter",
+        "description": "A playful and energetic hamster who loves running in her wheel and exploring small tunnels."
+    },
+    {
+        "pet_id": 8,
+        "name": "Toby",
+        "species": "Turtle",
+        "breed": "Red-Eared Slider",
+        "age": 7,
+        "shelter_site": "Reptile Rescue",
+        "description": "A slow-moving but curious turtle, enjoys swimming in his water tank and basking in the sun."
+    }
+]
