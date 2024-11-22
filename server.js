@@ -19,6 +19,12 @@ app.use((req, res, next) => {
 
 app.use('/', require('./routes'));
 
+// Global error handler
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(err.status || 500).json({ error: err.message || 'Internal Server Error' });
+});
+
 mongodb.initDb((err) => {
     if(err) {
         console.log(err)

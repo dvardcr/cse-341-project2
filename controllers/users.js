@@ -1,11 +1,15 @@
 const mongodb = require('../data/database'); 
 
+// Have to do some updates from Project 1
+
 const getAll = async (req, res) => {
     //#swagger.tags=['Users']
     const result = await mongodb.getDatabase().collection('users').find();
     result.toArray().then((users) => {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(users);
+    }).catch((err) => {
+        res.status(500).json({ error: 'An error occurred while retrieving users', details: err.message });
     });
 };
 
