@@ -5,7 +5,7 @@ const doc = {
         title: 'Pet Adoption API',
         description: 'Pets API'
     },
-    host: 'localhost:3000',
+    host: 'cse341-node-r04l.onrender.com',  // change 'localhost:3000' or 'cse341-node-r04l.onrender.com'
     schemes: ['http', 'https']
 };
 
