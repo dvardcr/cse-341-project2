@@ -6,7 +6,7 @@ const doc = {
         description: 'Pets API'
     },
     host: 'cse-341-project2-29fu.onrender.com',  // change 'localhost:3000' or 'cse-341-project2-29fu.onrender.com'
-    schemes: ['https']
+    schemes: ['https'] //'https' only for Render
 };
 
 const outputFile = './swagger.json';

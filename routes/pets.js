@@ -6,6 +6,8 @@ const { validatePetCreation, validatePetUpdate } = require('../middleware/petsVa
 const errorHandling = require('../middleware/errorHandling');
 const { validationResult } = require('express-validator');
 
+const { isAuthenticated } = require('../middleware/authenticate');
+
 // Get all pets
 router.get('/', errorHandling(petsController.getAll));
 
@@ -15,6 +17,7 @@ router.get('/:id', errorHandling(petsController.getSingle));
 // Add new pet (with validation and error handling)
 router.post(
     '/',
+    isAuthenticated,
     validatePetCreation,
     (req, res, next) => {
         const errors = validationResult(req);
@@ -30,6 +33,7 @@ router.post(
 // Update pet (with validation and error handling)
 router.put(
     '/:id',
+    isAuthenticated,
     validatePetUpdate,
     (req, res, next) => {
         const errors = validationResult(req);
@@ -43,6 +47,6 @@ router.put(
 );
 
 // Remove pet
-router.delete('/:id', errorHandling(petsController.deletePet));
+router.delete('/:id', isAuthenticated, errorHandling(petsController.deletePet));
 
 module.exports = router;
